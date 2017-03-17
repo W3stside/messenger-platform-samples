@@ -413,15 +413,17 @@ function receivedAccountLink(event) {
 * Send a test Monkey Message using the Send API
 *
 */
-function sendMonkeyText(recipientID) {
+function sendMonkeyText(recipientId) {
     var messageData = {
         recipient = {
-            id: recipientID
+            id: recipientId
         },
         message = {
-            text: "I-I... I AM A MONKEYYYYY!"
+            text: "I-I... I AM A MONKEYYYYY!",
+            metadata: "DEVELOPER_DEFINED_METADATA"
         }
-    }
+    };
+    
     callSendAPI(messageData);
 }
 
