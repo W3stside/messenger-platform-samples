@@ -415,10 +415,10 @@ function receivedAccountLink(event) {
 */
 function sendMonkeyText(recipientId) {
     var messageData = {
-        recipient = {
+        recipient: {
             id: recipientId
         },
-        message = {
+        message: {
             text: "I-I... I AM A MONKEYYYYY!",
             metadata: "DEVELOPER_DEFINED_METADATA"
         }
