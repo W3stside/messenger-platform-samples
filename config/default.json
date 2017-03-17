@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "appSecret": "38b6bdf27ac72a6fdc66fe85abb5a645",
+    "pageAccessToken": "EAAUvTepWaiIBALAdH3MekN5fUQHZChoQPdMZBdrjQ9wVa6y5R0aEarXmPBZAd3ccAEkhGz5deT1gmQTfUOgHNzyrM8fTo67QbUXanW5ApaYN9NRWBM734Y9U0UxYE1h08XBK4BR3UJtJm92EvS45CKykBGs6gfDnEZAHrnqQJQZDZD",
+    "validationToken": "THIS_IS_ME_VERIFYING_CAPTAIN",
+    "serverURL": "https://guarded-earth-20095.herokuapp.com"
 }
