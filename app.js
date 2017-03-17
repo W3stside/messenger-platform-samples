@@ -255,6 +255,11 @@ function receivedMessage(event) {
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
     switch (messageText) {
+            
+      case 'monkey':
+        sendMonkeyText(senderID);
+        break;    
+            
       case 'image':
         sendImageMessage(senderID);
         break;
@@ -402,6 +407,22 @@ function receivedAccountLink(event) {
 
   console.log("Received account link event with for user %d with status %s " +
     "and auth code %s ", senderID, status, authCode);
+}
+
+/*
+* Send a test Monkey Message using the Send API
+*
+*/
+function sendMonkeyText(recipientID) {
+    var messageData = {
+        recipient = {
+            id: recipientID
+        },
+        message = {
+            text: "I-I... I AM A MONKEYYYYY!"
+        }
+    }
+    callSendAPI(messageData);
 }
 
 /*
@@ -835,4 +856,3 @@ app.listen(app.get('port'), function() {
 });
 
 module.exports = app;
-
